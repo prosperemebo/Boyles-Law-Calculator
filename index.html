@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Boyles law Calculator</title>
+  </head>
+  <body>
+    <div class="v-header">
+      <video
+        src="images/video.mkv"
+        autoplay="true"
+        loop="true"
+        muted="true"
+      ></video>
+    </div>
+    <header class="main">
+      <div class="heading">
+        <h1>Boyles Law Calculator</h1>
+      </div>
+      <div class="ans__container">
+        <h3 id="answer"></h3>
+        <h2 id="ans"></h2>
+      </div>
+
+      <form action="" id="input" autocomplete="off">
+        <label class="input--label" for="v1">Volume 1</label>
+        <input
+          placeholder="Enter value"
+          class="gel--input"
+          type="number"
+          name="v1"
+          id="v1"
+        />
+        &nbsp;
+        <select name="text" id="vt1" class="drop--input">
+          <option value="M&sup3;">Milliliters&sup3;</option>
+          <option value="Cl&sup3;">Centiliters&sup3;</option>
+          <option value="Dl&sup3;">Deciliters&sup3;</option>
+          <option value="L&sup3;">Liters&sup3;</option>
+          <option value="Kl&sup3;">Kiloliters&sup3;</option>
+          <option value="Mm&sup3;">Millimeter&sup3;</option>
+          <option value="Cm&sup3;">Centimeter&sup3;</option>
+          <option value="Dm&sup3;">Decimeter&sup3;</option>
+          <option value="M&sup3;">Meter&sup3;</option>
+          <option value="Km&sup3;">Kilometer&sup3;</option>
+        </select>
+        <br /><br />
+        <label class="input--label" for="v2">Volume 2</label>
+        <input
+          placeholder="Enter value"
+          class="gel--input"
+          type="number"
+          name="v2"
+          id="v2"
+        />
+        &nbsp;
+        <select name="text" id="vt2" class="drop--input">
+          <option value="Ml&sup3;">Milliliters&sup3;</option>
+          <option value="Cl&sup3;">Centiliters&sup3;</option>
+          <option value="Dl&sup3;">Deciliters&sup3;</option>
+          <option value="L&sup3;">Liters&sup3;</option>
+          <option value="Kl&sup3;">Kiloliters&sup3;</option>
+          <option value="Mm&sup3;">Millimeter&sup3;</option>
+          <option value="Cm&sup3;">Centimeter&sup3;</option>
+          <option value="Dm&sup3;">Decimeter&sup3;</option>
+          <option value="m&sup3;">Meter&sup3;</option>
+          <option value="Kl&sup3;">Kilometer&sup3;</option> </select
+        ><br /><br />
+        <label class="input--label pat" for="p1">Pressure 1</label>
+        <input
+          placeholder="Enter value"
+          class="gel--input"
+          type="number"
+          name="p1"
+          id="p1"
+        />
+        &nbsp;
+        <select name="text" id="pt1" class="drop--input">
+          <option value="mmHg">mmHg</option>
+          <option value="cmHg">cmHg</option>
+          <option value="dmHg">dmHg</option
+          >xxx
+          <option value="mHg">mHg</option>
+          <option value=">kHg">kHg</option> </select
+        ><br /><br />
+        <label class="input--label pat" for="p2">Pressure 2</label>
+        <input
+          placeholder="Enter value"
+          class="gel--input"
+          type="number"
+          name="p2"
+          id="p2"
+        />
+        &nbsp;
+        <select name="text" id="pt2" class="drop--input">
+          <option value="mmHg">mmHg</option>
+          <option value="cmHg">cmHg</option>
+          <option value="dmHg">dmHg</option>
+          <option value="mhHg">mHg</option>
+          <option value="kmHg">kHg</option>
+        </select>
+      </form>
+      <br />
+      <button class="button--input" id="Calculate">Calculate Unknown</button>
+      <p class="warn">&excl; Leave one input vacant for your unknown value.</p>
+      <p class="warn">&excl; Vacant input will be recognised as unknown.</p>
+    </header>
+    <script src="js/real.js"></script>
+  </body>
+</html>
